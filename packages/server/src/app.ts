@@ -58,7 +58,6 @@ import {
   seadex,
   easynews,
   library,
-  cauldron,
 } from './routes/builtins/index.js';
 import {
   ipMiddleware,
@@ -238,7 +237,6 @@ builtinsRouter.use('/torrent-galaxy', torrentGalaxy);
 builtinsRouter.use('/seadex', seadex);
 builtinsRouter.use('/easynews', easynews);
 builtinsRouter.use('/library', library);
-builtinsRouter.use('/cauldron', cauldron);
 app.use('/builtins', builtinsRouter);
 
 app.use('/blocklist', publicBlocklistRouter);
